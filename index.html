@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div id= "container">
+        <!-- navbar begin -->
+        <div id= "navbar">
+            <h1>Profile</h1>
+            <ul id="nav-links">
+                <li>Home</li>
+                <li>My Profile</li>
+                <li>Find Connections</li>
+            </ul>
+            <div><button class="btn">Sign Out</button>
+            </div>
+        </div>
+        <!-- navbar end -->
+        <div id= "main">
+            <div class= "columns">
+                <div id= "column_left">
+                    <div id="left_top">
+                        <div class="profile">
+                            <!-- from user card -->
+                            <div id="blue-bar">
+                                <img id="round" src="img/cl_square.jpeg" alt="profile image" style= "width: 95px;">
+                            </div>
+                            <div id="info">
+                                <ul>
+                                    <li id="user_name">Jane Doe</li>
+                                    <li><img class="icon" src="img/map-marker.png" alt="map icon" style="width: 20px;">Seattle</li>
+                                    <li>Developer | Accountant | Problem Solver</li>
+                                    <li>Key to your Finance Enterprise Solution!</li>
+                                    <li onclick="edit()"><img class="icon" src= "img/gear.png" alt="gear icon" style= "width: 30px;"><a href="#">edit profile</a></li>
+                                </ul>
+                            </div>
+                            <!-- end of user card -->
+                        </div>
+                    </div>
+                    <div id="left_bottom">
+                            <div class="subheader">
+                                <h3 id="ed">Education</h3>
+                            </div>
+                            <div id="edulist">
+                                <div class="flex align">
+                                    <img src="img/Dojo.jpg" alt="dojo logo" style="width: 30px; height: 30px;">
+                                    <h3 class="right-of-image">Coding Dojo - Full Stack Bootcamp</h3>
+                                </div>
+                                <div>
+                                <p class="indent graytxt">Nov 2021 - Mar 2022<p>
+                                <p class="indent">Triple black belt in Python, MERN, and C++...<p>
+                                </div>
+                                <div class="flex align">
+                                    <img src="img/wwuLogo.jpg" alt="wwu logo" style="width: 30px; height: 30px;">
+                                    <h3 class="right-of-image">MBA - Information Systems</h3>
+                                </div>
+                                <div>
+                                <p class="indent graytxt">Sep 2000 - Jun 2002<p>
+                                </div>
+                                <div class="flex align">
+                                    <img src="img/wwuLogo.jpg" alt="wwu logo" style="width: 30px; height: 30px;">
+                                    <h3 class="right-of-image">BA - English</h3>
+                                </div>
+                            <div>
+                            <p class="indent graytxt">Jan 1997 - Jun 200<p>
+                            <p class="indent">Emphasis in Writing<p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id= "column_right">
+                    <div class="connection">
+                        <div class="subheader flex align">
+                            <button class="sub-btn">2</button>
+                            <H3 class="right-of-image">Connection Request</H3>
+                        </div>
+                        <div>
+                            <div class="flex">
+                                <div class="names">
+                                    <ul class="card-list">
+                                        <li class="card-list-item" id="request-1">
+                                            <span>
+                                                <img src="img/todd-s.jpg" alt="todd" class="avatar-s">
+                                                Todd E
+                                            </span>
+                                            <span>
+                                                <img src="img/accept-circle.png" alt="accept" class="icon" onclick='accept("#request-1")'>
+                                                <img src="img/close-circle.png" alt="close" class="icon" onclick='ignore("#request-1")'>
+                                            </span>
+                                        </li>
+                                        <li class="card-list-item" id="request-2">
+                                            <span>
+                                                <img src="img/phil-s.jpg" alt="phil" class="avatar-s">
+                                                Phil E
+                                            </span>
+                                            <span>
+                                                <img src="img/accept-circle.png" alt="accept" class="icon" onclick='accept("#request-2")'>
+                                                <img src="img/close-circle.png" alt="close" class="icon" onclick='ignore("#request-2")'>
+                                            </span>
+                                        </li>
+                                    </ul>   
+                                    <!-- <div class="flex align">
+                                        <img src="img/todd-s.jpg" alt="user pic" style="width: 45px;">
+                                        <p class="right-of-image">Todd S</p>
+                                    </div>
+                                    <div class="flex align">
+                                        <img src="img/phil-s.jpg" alt="user pic" style="width: 45px;">
+                                        <p class="right-of-image">Phil S</p>
+                                    </div>
+                                </div>
+                                <div class="option-circles flex align">
+                                    <div>
+                                        <img src="img/accept-circle.png" alt="accept circle" style="width: 35px;">
+                                        <img src="img/close-circle.png" alt="close cirlce" style="width: 35px;">
+                                    </div>
+                                    <div>
+                                        <img src="img/accept-circle.png" alt="accept circle" style="width: 35px;">
+                                        <img src="img/close-circle.png" alt="close cirlce" style="width: 35px;">
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                        <!--End of Right BOX 1-->
+                    <div class="connection_bottom">
+                        <div class="subheader flex align">
+                            <button class="sub2-btn">500+</button>
+                        <H3 class="right-of-image">Your Connections</H3>
+                        </div>
+                        <div>
+                            <div class="yconnections">
+                                <div class="flex align">
+                                    <img src="img/adrien-s.jpg" alt="user pic" style="width: 45px;">
+                                    <p class="right-of-image">Adrien S</p>
+                                </div>
+                                <div class="flex align">
+                                    <img src="img/anne-s.jpg" alt="user pic" style="width: 45px;">
+                                    <p class="right-of-image">Anne S</p>
+                                </div>
+                                <div class="flex align">
+                                    <img src="img/alayne-s.jpg" alt="user pic" style="width: 45px;">
+                                    <p class="right-of-image">Alayne S</p>
+                                </div>
+                                <div class="flex align">
+                                    <img src="img/arry-s.jpg" alt="user pic" style="width: 45px;">
+                                    <p class="right-of-image">Arry S</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

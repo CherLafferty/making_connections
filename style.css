@@ -1,0 +1,228 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica;
+}
+.flex {
+    display: flex;
+}
+.align {
+    align-items: center;
+}
+#container {
+    height: 1080px;
+    width: 1100px;
+    background-color: blanchedalmond; 
+}
+#navbar {
+    /* width: 950px; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: black;
+    height: 65px;
+    padding: 0px 100px;
+    color: white;
+}
+#navbar li {
+    list-style: none;
+    padding: 0px 20px;
+}
+#nav-links {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    padding: 10px 10px 10px 10px;
+    font-weight:bold;
+    color: white;
+    background-color: purple;
+    border-color: black;
+}
+#main {
+    background-color: violet;
+    height: 1000px;
+}
+.columns {
+    background-color: white;
+    display: flex;
+    margin: 0px 50px;
+}
+#column_left {
+    /* background-color: thistle; */
+    display: flex;
+    flex: 3;
+    flex-direction:column;
+    /* width: 60%; */
+    height: 800px;
+}
+#column_right {
+    /* background-color: yellow; */
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    Margin: 40px 40px 0px 0px;
+    /* width: 40%; */
+    height: 800px;
+}
+.connection {
+    border: 2px solid slategrey;
+    margin: 0px 0px 40px 0px;
+    margin-bottom: 10px;
+}
+.connection img {
+    padding: 3px;
+    border-radius: 50%;
+}
+.connection_bottom{
+    border: 2px solid slategrey;
+    margin: 40px 0px 0px 0px;
+    margin-bottom: 10px;
+}
+.yconnections {
+    padding: 10px;
+    font-size:larger;
+    font-weight: bold;
+}
+.yconnections img {
+    padding: 3px;
+    border-radius: 50%;
+}
+.border {
+    border: 2px solid slategrey;
+}
+#left_bottom {
+    border: 2px solid slategrey;
+    /* margin-bottom: 10px; */
+    margin: 0px 0px 0px 40px;
+    width: 500px;
+    height: 600px;
+    background-color: white;
+}
+.right-of-image {
+    padding: 0px 10px 0px 20px;
+}
+.indent {
+    margin: 0px 0px 0px 50px;
+}
+.graytxt {
+    color:lightslategray;
+}
+.subheader {
+    background-color:darkslategray;
+    height: 40px;
+    color: white;
+    padding: 10px;
+}
+#ed{
+    padding: 10px;
+}
+#edulist {
+    padding: 10px;
+}
+.names {
+    flex: 3;
+    background-color: white;
+    padding: 5px;
+    font-size:larger;
+    font-weight: bold;
+}
+.option-circles {
+    flex: 2;
+    background-color:white;
+    padding: 10px 0px 5px 10px;
+}
+.sub-btn {
+    color: black;
+    background-color: gray;
+    border-radius: 50%;
+    border: 1px gray;
+    width: 40px;
+    Height: 40px;
+}
+.sub2-btn {
+    color: black;
+    background-color: gray;
+    margin: 4px 2px;
+    width: 50px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px gray;
+}
+.footer {
+    height: 50px;
+    border-top:  2px solid slategrey;
+    padding: 5px;
+}
+
+/* from solutions */
+.card-list {
+    padding: 0 20px;
+    padding-top: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    
+}
+
+.card-list-item, 
+.card-list-item > * {
+    display: flex;
+    align-items: center;
+}
+
+.card-list-item {
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.card-list-item, img {
+    width: 50px;
+}
+
+/* end of solutions copy */
+/* user card css */
+.profile {
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    margin: 40px;
+    flex-flow: column wrap;
+    border: 2px solid slategray;
+}
+
+#round {
+    border-style:solid;
+    border-color: slategray;
+    border-radius: 50%;
+    border-width: 3px;
+    background-color: white;
+}
+
+#blue-bar {
+    background-color: teal;
+    /* background-image: url("img/nature.jpg"); */
+    height: 20px;
+    padding: 30px;
+    border: 1px solid slategray;
+}
+#info {
+    padding: 65px 0px 0px 40px;
+}
+#user_name {
+    font-size: x-large;
+    font-weight: bold;
+}
+.profile li {
+    list-style-type: none;
+}
+.profile li, .profile img {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.icon {
+    margin: 0px 5px 0px 0px;
+}
+/* End user card CSS */
